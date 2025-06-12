@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/artaram/static/css/main.f855e6bc.css",
-    "main.js": "/artaram/static/js/main.e0edc048.js",
+    "main.css": "/artaram/static/css/main.8f289f7a.css",
+    "main.js": "/artaram/static/js/main.eed2d3ba.js",
     "static/js/453.4ea57d7a.chunk.js": "/artaram/static/js/453.4ea57d7a.chunk.js",
-    "static/media/logo.svg": "/artaram/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/artaram/index.html",
-    "main.f855e6bc.css.map": "/artaram/static/css/main.f855e6bc.css.map",
-    "main.e0edc048.js.map": "/artaram/static/js/main.e0edc048.js.map",
+    "main.8f289f7a.css.map": "/artaram/static/css/main.8f289f7a.css.map",
+    "main.eed2d3ba.js.map": "/artaram/static/js/main.eed2d3ba.js.map",
     "453.4ea57d7a.chunk.js.map": "/artaram/static/js/453.4ea57d7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e0edc048.js"
+    "static/css/main.8f289f7a.css",
+    "static/js/main.eed2d3ba.js"
   ]
 }
