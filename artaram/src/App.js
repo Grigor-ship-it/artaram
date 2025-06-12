@@ -27,8 +27,8 @@ function App() {
 
   return (
     <>
+    <Navbar />  
       <Hero />
-      <Navbar />
       <Gallery />
       <Bio />
       <Contact />

@@ -1,5 +1,5 @@
 .gallery-section {
-    padding: 6rem 1.5rem;
+    padding: 3rem 1.5rem;
     background: #fafafa;
   }
   
@@ -13,7 +13,7 @@
   }
   
   
-  .gallery-section h2 {
+  /* .gallery-section h2 {
     font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
@@ -21,11 +21,11 @@
     letter-spacing: 0.02em;
     color: #111;
     max-width: 500px;
-  }
+  } */
   
   .art-card {
     width: 100%;
-    background: #fff;
+    background: #a69371;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     overflow: hidden;
@@ -33,16 +33,6 @@
     position: relative;
   }
   
-  
-  
-  .art-card {
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
   
   
   .art-card:hover {
@@ -93,6 +83,26 @@
     cursor: pointer;
   }
   
+  .gallery-overlay {
+    background: rgba(255, 255, 255, 0.85); /* Soft white overlay for readability */
+    padding: 2rem 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+  
+  .gallery-title {
+    font-family: 'Marcellus', serif; /* or another classy font like 'Playfair Display' or 'Cormorant Garamond' */
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+
   .modal {
     position: fixed;
     top: 0;
@@ -103,7 +113,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 1001;
     animation: fadeIn 0.3s ease-out;
   }
   

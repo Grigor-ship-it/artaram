@@ -1,11 +1,14 @@
-// src/components/Navbar.js
 import React from 'react';
 import './Navbar.css';
+// import logo from '../assets/logo.svg'
+import { ReactComponent as Logo } from '../assets/logo.svg';
+
 
 const Navbar = () => (
-  <nav className="navbar">
+    <nav className="navbar">
     <div className="navbar-content">
-      <h1 className="logo">ArtAram</h1>
+    {/* <h1>ArtAram</ h1> */}
+    <Logo className="navbar-logo" />
       <ul className="nav-links">
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#bio">Bio</a></li>
@@ -13,6 +16,7 @@ const Navbar = () => (
       </ul>
     </div>
   </nav>
+  
 );
 
 export default Navbar;
