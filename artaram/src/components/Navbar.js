@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => (
   <nav className="navbar">
     <div className="navbar-content">
-      <h1 className="logo">Artaram</h1>
+      <h1 className="logo">ArtAram</h1>
       <ul className="nav-links">
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#bio">Bio</a></li>
