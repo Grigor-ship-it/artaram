@@ -1,24 +1,47 @@
-/* src/components/Navbar.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background: #111;
-    color: white;
-    position: sticky;
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0; /* ⬅️ remove horizontal padding here */
   }
+
+  .navbar-content {
+  width: 100%;
+  max-width: 1600px; /* or 1400px */
+  padding: 0 3rem; /* ⬅️ add horizontal spacing *inside* content */
+  display: flex;
+  justify-content: space-between; /* ⬅️ keeps logo left & links right */
+  align-items: center;
+  color: white;
+}
+  
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: white;
+  }
+  
   .nav-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     list-style: none;
   }
+  
   .nav-links a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
   }
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
+  
+  .nav-links a:hover {
+    color: #f0a500;
   }
   

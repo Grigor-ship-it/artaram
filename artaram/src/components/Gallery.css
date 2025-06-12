@@ -1,24 +1,168 @@
-/* src/components/Gallery.css */
 .gallery-section {
-    padding: 2rem;
-    background: #f9f9f9;
+    padding: 6rem 1.5rem;
+    background: #fafafa;
   }
+  
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); /* 👈 Two per row */
+    gap: 3rem;
+    max-width: 1100px;  /* Wider container */
+    margin: 0 auto;
+    padding: 0 1rem;
   }
+  
+  
+  .gallery-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 0.02em;
+    color: #111;
+    max-width: 500px;
+  }
+  
   .art-card {
-    border: 1px solid #ddd;
-    background: white;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
   }
+  
+  
+  
+  .art-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  
+  .art-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  .art-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.03) contrast(1.1);
+  }
+  
+  
   .art-card img {
     width: 100%;
-    height: auto;
+    height: 480px;
+    object-fit: cover;
+    object-position: top; /* 👈 this makes the image start from the top */
+    display: block;
+    transition: transform 3s cubic-bezier(0.19, 1, 0.22, 1), filter 1.8s ease;
+    will-change: transform, filter;
   }
+  
   .art-card .info {
-    margin-top: 0.5rem;
+    padding: 1.2rem;
+    text-align: left;
+  }
+  
+  .art-card .info h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  .art-card .info p {
+    margin: 0.5rem 0 0;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+
+  .art-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease-out forwards;
+    animation-delay: calc(var(--i) * 100ms);
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-content img {
+    max-width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .modal-content h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .modal-content p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: -12px;          /* 👆 Move it *above* the image */
+    right: -12px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    z-index: 10;
+  }
+  
+  .close-btn:hover {
+    background: #eee;
+    color: #000;
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
   
