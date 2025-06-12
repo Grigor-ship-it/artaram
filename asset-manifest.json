@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/artaram/static/css/main.8f289f7a.css",
-    "main.js": "/artaram/static/js/main.eed2d3ba.js",
+    "main.css": "/artaram/static/css/main.1a7dc22c.css",
+    "main.js": "/artaram/static/js/main.c50c513a.js",
     "static/js/453.4ea57d7a.chunk.js": "/artaram/static/js/453.4ea57d7a.chunk.js",
+    "static/media/boy.jpg": "/artaram/static/media/boy.e6c267aa35b2fee898d3.jpg",
+    "static/media/image2.png": "/artaram/static/media/image2.8e9ea452ddbe95c3c2a5.png",
+    "static/media/image7.png": "/artaram/static/media/image7.082f5ef4257a6a11d736.png",
+    "static/media/image3.png": "/artaram/static/media/image3.b439b07b0ae76ef4a164.png",
+    "static/media/image5.png": "/artaram/static/media/image5.06fe8b7338a395159aa3.png",
+    "static/media/image1.png": "/artaram/static/media/image1.c90777f84ac0d7c78601.png",
+    "static/media/image0.png": "/artaram/static/media/image0.dd62860a606f870200a0.png",
+    "static/media/image6.png": "/artaram/static/media/image6.c7ca0a8f7951be9f8f66.png",
+    "static/media/cover.jpg": "/artaram/static/media/cover.2fafa62e46e974ae5974.jpg",
     "index.html": "/artaram/index.html",
-    "main.8f289f7a.css.map": "/artaram/static/css/main.8f289f7a.css.map",
-    "main.eed2d3ba.js.map": "/artaram/static/js/main.eed2d3ba.js.map",
+    "main.1a7dc22c.css.map": "/artaram/static/css/main.1a7dc22c.css.map",
+    "main.c50c513a.js.map": "/artaram/static/js/main.c50c513a.js.map",
     "453.4ea57d7a.chunk.js.map": "/artaram/static/js/453.4ea57d7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f289f7a.css",
-    "static/js/main.eed2d3ba.js"
+    "static/css/main.1a7dc22c.css",
+    "static/js/main.c50c513a.js"
   ]
 }
